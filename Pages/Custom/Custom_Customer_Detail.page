@@ -1,0 +1,98 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{FirstName}",
+						"Footnote": "{EmailAddress}",
+						"Description": "{CustomerId}",
+						"StatusText": "{PhoneNumber}",
+						"DetailImage": "sap-icon://customer",
+						"DetailImageIsCircular": false,
+						"BodyText": "{DateOfBirth}",
+						"HeadlineText": "{LastName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Address/HouseNumber} {Address/Street}",
+							"_Name": "KeyValue0",
+							"KeyName": "Address",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/City}",
+							"_Name": "KeyValue3",
+							"KeyName": "City",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Address/PostalCode}",
+							"_Name": "KeyValue1",
+							"KeyName": "Post Code",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/Country}",
+							"_Name": "KeyValue2",
+							"KeyName": "Country",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Custom_Customer_Detail",
+	"Caption": "Customer Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ABIUpdateInit",
+				"Caption": "Update Record",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDKApp/Actions/Custom/NavToCustom_Customers_Edit.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

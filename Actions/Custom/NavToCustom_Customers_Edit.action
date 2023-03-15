@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToCustom_Customers_Edit"
+	},
+	"PageToOpen": "/MDKApp/Pages/Custom/Custom_Customers_Edit.page",
+	"ModalPage": true
+}

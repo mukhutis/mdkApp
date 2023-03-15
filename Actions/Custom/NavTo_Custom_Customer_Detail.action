@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_Custom_Customer_Detail"
+	},
+	"PageToOpen": "/MDKApp/Pages/Custom/Custom_Customer_Detail.page",
+	"NavigationType": "Inner"
+}

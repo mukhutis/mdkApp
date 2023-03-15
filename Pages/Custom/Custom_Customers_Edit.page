@@ -1,0 +1,81 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "{FirstName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCFirstName",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "First Name",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{LastName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCLastName",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Last Name",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCPhone",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Phone",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCEmail",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Email",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Custom_Customers_Edit",
+	"Caption": "Update Customer",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ABICancel",
+				"Caption": "Cancel",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDKApp/Actions/Custom/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ABIUpdate",
+				"Caption": "Update",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDKApp/Actions/Custom/Custom_Customer_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}
